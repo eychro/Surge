@@ -1,0 +1,20 @@
+name: Surge
+version: '${project.version}'
+main: dev.eychro.surge.Surge
+author: 'Eychro'
+commands:
+  surge:
+    aliases:
+      - surge
+      - hubcore
+  setspawn:
+    usage: setspawn
+  fly:
+    usage: fly
+    aliases:
+      - f
+      - fly
+  build:
+    aliases:
+      - build
+      - buildmode
