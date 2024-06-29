@@ -1,6 +1,6 @@
 # Surge - Minecraft Hub Core
 
-Surge is a powerful Minecraft hub core designed to enhance the multiplayer experience for Minecraft servers. It provides a centralized hub where players can gather, socialize, and access various features and game modes.
+Surge is a powerful Minecraft hub core designed to enhance the multiplayer experience for Minecraft servers. It provides a centralized hub where players can gather, socialize, and access various features.
 
 ## Features
 
