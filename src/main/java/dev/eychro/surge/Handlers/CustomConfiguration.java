@@ -14,7 +14,6 @@ public class CustomConfiguration {
 
     public static void Setup() {
         file = new File(Bukkit.getServer().getPluginManager().getPlugin("Surge").getDataFolder(), "config.yml");
-        file = new File(Bukkit.getServer().getPluginManager().getPlugin("Surge").getDataFolder(), "messages/en.yml");
 
         if (file.exists()) {
             try {
