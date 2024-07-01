@@ -2,6 +2,7 @@ package dev.eychro.surge;
 
 import dev.eychro.surge.Commands.Player.Fly;
 
+import dev.eychro.surge.Commands.Staff.Reload;
 import dev.eychro.surge.Handlers.CustomConfiguration;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -18,6 +19,7 @@ public final class Surge extends JavaPlugin {
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + " " + ChatColor.RED + "Status: " + ChatColor.GREEN + "ACTIVATED" + ChatColor.DARK_GRAY + "             ");
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + " " + ChatColor.RED + "Version: " + ChatColor.WHITE + getDescription().getVersion() + ChatColor.DARK_GRAY + "                ");
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "                               ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "            " + ChatColor.GRAY + "EYCHRO" + ChatColor.DARK_GRAY + "            ");
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY +"---------------------------------");
 
         //Config
@@ -46,6 +48,7 @@ public final class Surge extends JavaPlugin {
 
     private void registerCommands() {
         this.getCommand("fly").setExecutor(new Fly());
+        this.getCommand("reload").setExecutor(new Reload());
     }
 
 }
