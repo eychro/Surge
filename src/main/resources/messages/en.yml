@@ -1,0 +1,16 @@
+##############################################################
+#                                                            #
+#                          Messages                          #
+#                                                            #
+##############################################################
+
+NoPermission: "&cNo permission."
+OnlyPlayers: "&cOnly Players can execute this command"
+
+#Fly
+FlyActivated: "&aFly has been activated"
+FlyDeactivated: "&cFly has been deactivated"
+
+#Staff Commands
+SpawnSet: "&aSpawn has been set successfully"
+Reload: "&aSurge has been reloaded successfully"
