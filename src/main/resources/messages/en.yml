@@ -4,13 +4,14 @@
 #                                                            #
 ##############################################################
 
-NoPermission: "&cNo permission."
-OnlyPlayers: "&cOnly Players can execute this command"
+NoPermission: ""
+OnlyPlayers: ""
 
-#Fly
-FlyActivated: "&aFly has been activated"
-FlyDeactivated: "&cFly has been deactivated"
+FlyEnabled: ""
+FlyDisabled: ""
 
-#Staff Commands
-SpawnSet: "&aSpawn has been set successfully"
-Reload: "&aSurge has been reloaded successfully"
+BuildModeEnabled: ""
+BuildModeDisabled: ""
+
+VanishEnabled: ""
+VanishDisabled: ""

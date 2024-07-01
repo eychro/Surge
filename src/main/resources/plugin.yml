@@ -3,18 +3,9 @@ version: '${project.version}'
 main: dev.eychro.surge.Surge
 author: 'Eychro'
 commands:
-  surge:
+  reload:
     aliases:
-      - surge
-      - hubcore
-  setspawn:
-    usage: setspawn
+      - reload
   fly:
-    usage: fly
     aliases:
-      - f
       - fly
-  build:
-    aliases:
-      - build
-      - buildmode
