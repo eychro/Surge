@@ -1,7 +1,6 @@
 package dev.eychro.surge.Commands.Player;
 
 import dev.eychro.surge.Handlers.CustomConfiguration;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -21,11 +20,11 @@ public class Fly implements CommandExecutor {
             if (sender.hasPermission("Surge.fly")) {
                 if(fly.contains(player)){
                     fly.remove(player);
-                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyDeactivate"));
+                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyDisabled"));
                     player.setAllowFlight(false);
                 } else {
                     fly.add(player);
-                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyActivated"));
+                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyEnabled"));
                     player.setAllowFlight(true);
                 }
             } else {
