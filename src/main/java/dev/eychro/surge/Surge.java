@@ -1,6 +1,5 @@
 package dev.eychro.surge;
 
-import dev.eychro.surge.Commands.Staff.SetSpawn;
 import dev.eychro.surge.Commands.Player.Fly;
 
 import dev.eychro.surge.Handlers.CustomConfiguration;
@@ -14,11 +13,11 @@ public final class Surge extends JavaPlugin {
 
         //Message when enabled
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "---------------------------------");
-        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "|             " + ChatColor.RED + "SURGE" + ChatColor.DARK_GRAY + "             |");
-        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "|                               |");
-        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "| " + ChatColor.RED + "Status: " + ChatColor.GREEN + "ACTIVATED" + ChatColor.DARK_GRAY + "             |");
-        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "| " + ChatColor.RED + "Version: " + ChatColor.WHITE + getDescription().getVersion() + ChatColor.DARK_GRAY + "                |");
-        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "|                               |");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "             " + ChatColor.RED + "SURGE" + ChatColor.DARK_GRAY + "             ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "                               ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + " " + ChatColor.RED + "Status: " + ChatColor.GREEN + "ACTIVATED" + ChatColor.DARK_GRAY + "             ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + " " + ChatColor.RED + "Version: " + ChatColor.WHITE + getDescription().getVersion() + ChatColor.DARK_GRAY + "                ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "                               ");
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY +"---------------------------------");
 
         //Config
@@ -36,13 +35,17 @@ public final class Surge extends JavaPlugin {
     @Override
     public void onDisable() {
 
-
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "---------------------------------");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "             " + ChatColor.RED + "SURGE" + ChatColor.DARK_GRAY + "             ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "                               ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + " " + ChatColor.RED + "Status: " + ChatColor.GREEN + "DEACTIVATED" + ChatColor.DARK_GRAY + "             ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY + "                               ");
+        getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY +"---------------------------------");
 
     }
 
     private void registerCommands() {
         this.getCommand("fly").setExecutor(new Fly());
-        this.getCommand("setspawn").setExecutor(new SetSpawn());
     }
 
 }
