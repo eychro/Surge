@@ -1,5 +1,6 @@
 package dev.eychro.surge.Commands.Player;
 
+import dev.eychro.surge.Handlers.CustomConfiguration;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -20,21 +21,21 @@ public class Fly implements CommandExecutor {
             if (sender.hasPermission("Surge.fly")) {
                 if(fly.contains(player)){
                     fly.remove(player);
-                    player.sendMessage(ChatColor.RED + "Fly has been deactivated.");
+                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyDeactivate"));
                     player.setAllowFlight(false);
                 } else {
                     fly.add(player);
-                    player.sendMessage(ChatColor.GREEN + "Fly has been activated.");
+                    player.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("FlyActivated"));
                     player.setAllowFlight(true);
                 }
             } else {
 
-                sender.sendMessage(ChatColor.RED + "No permission.");
+                sender.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("NoPermission"));
 
             }
         } else {
 
-            sender.sendMessage(ChatColor.RED + "Only players can execute this command.");
+            sender.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("OnlyPlayers"));
 
         }
 
