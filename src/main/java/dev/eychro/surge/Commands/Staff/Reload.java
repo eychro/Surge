@@ -10,6 +10,7 @@ public class Reload implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String s, String[] strings) {
         if (sender.hasPermission("Surge.Reload")) {
             CustomConfiguration.reload();
+            sender.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("Reloaded"));
         } else {
             sender.sendMessage(CustomConfiguration.get().getString("Prefix") + CustomConfiguration.get().getString("NoPermission"));
         }
