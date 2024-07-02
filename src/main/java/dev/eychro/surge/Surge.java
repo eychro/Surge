@@ -2,6 +2,7 @@ package dev.eychro.surge;
 
 import dev.eychro.surge.Commands.Player.Fly;
 
+import dev.eychro.surge.Commands.Player.Vanish;
 import dev.eychro.surge.Commands.Staff.Reload;
 import dev.eychro.surge.Handlers.CustomConfiguration;
 import net.md_5.bungee.api.ChatColor;
@@ -50,6 +51,7 @@ public final class Surge extends JavaPlugin {
     private void registerCommands() {
         this.getCommand("fly").setExecutor(new Fly());
         this.getCommand("reload").setExecutor(new Reload());
+        this.getCommand("vanish").setExecutor(new Vanish());
     }
 
 }

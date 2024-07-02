@@ -3,6 +3,9 @@ version: '${project.version}'
 main: dev.eychro.surge.Surge
 author: 'Eychro'
 commands:
+  vanish:
+    aliases:
+      - vanish
   reload:
     aliases:
       - reload
