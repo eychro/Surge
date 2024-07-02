@@ -2,7 +2,7 @@ package dev.eychro.surge;
 
 import dev.eychro.surge.Commands.Player.Fly;
 
-import dev.eychro.surge.Commands.Player.Vanish;
+import dev.eychro.surge.Commands.Staff.Vanish;
 import dev.eychro.surge.Commands.Staff.Reload;
 import dev.eychro.surge.Handlers.CustomConfiguration;
 import net.md_5.bungee.api.ChatColor;

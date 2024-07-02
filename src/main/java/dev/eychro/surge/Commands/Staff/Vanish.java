@@ -1,4 +1,4 @@
-package dev.eychro.surge.Commands.Player;
+package dev.eychro.surge.Commands.Staff;
 
 import dev.eychro.surge.Handlers.CustomConfiguration;
 import org.bukkit.command.Command;
