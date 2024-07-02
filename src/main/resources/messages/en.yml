@@ -2,16 +2,19 @@
 #                                                            #
 #                          Messages                          #
 #                                                            #
+#               https://github.com/eychro/Surge              #
 ##############################################################
 
-NoPermission: ""
-OnlyPlayers: ""
+Reloaded: "&aPlugin has been successfully reloaded"
 
-FlyEnabled: ""
-FlyDisabled: ""
+NoPermission: "&cNo permission to execute this command."
+OnlyPlayers: "&cOnly Players can execute this command."
 
-BuildModeEnabled: ""
-BuildModeDisabled: ""
+FlyEnabled: "&aFly has been enabled."
+FlyDisabled: "&cFly has been disabled."
 
-VanishEnabled: ""
-VanishDisabled: ""
+BuildModeEnabled: "&aBuild mode has been enabled."
+BuildModeDisabled: "&cBuild mode has been disabled."
+
+VanishEnabled: "&aYou're not visible to other players."
+VanishDisabled: "&cYou're visible again to other players."
