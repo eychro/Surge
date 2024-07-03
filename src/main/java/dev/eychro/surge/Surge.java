@@ -5,6 +5,9 @@ import dev.eychro.surge.Commands.Player.Fly;
 import dev.eychro.surge.Commands.Staff.Vanish;
 import dev.eychro.surge.Commands.Staff.Reload;
 import dev.eychro.surge.Handlers.CustomConfiguration;
+import dev.eychro.surge.Handlers.World.Interaction.BlockBreak;
+import dev.eychro.surge.Handlers.World.Interaction.BlockInteraction;
+import dev.eychro.surge.Handlers.World.Interaction.BlockPlace;
 import net.md_5.bungee.api.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -31,8 +34,11 @@ public final class Surge extends JavaPlugin {
         CustomConfiguration.get().options().copyDefaults(true);
         CustomConfiguration.save();
 
-        //Commands
-        this.registerCommands();
+        // Commands
+        registerCommands();
+
+        // Handlers
+        registerHandlers();
     }
 
     @Override
@@ -47,6 +53,17 @@ public final class Surge extends JavaPlugin {
         getServer().getConsoleSender().sendMessage(ChatColor.DARK_GRAY +"---------------------------------");
 
     }
+
+    private void registerHandlers() {
+        BlockBreak blockBreak = new BlockBreak();
+        BlockPlace blockPlace = new BlockPlace();
+        BlockInteraction blockInteraction = new BlockInteraction();
+
+        getServer().getPluginManager().registerEvents(blockInteraction, this);
+        getServer().getPluginManager().registerEvents(blockPlace, this);
+        getServer().getPluginManager().registerEvents(blockBreak, this);
+    }
+
 
     private void registerCommands() {
         this.getCommand("fly").setExecutor(new Fly());
