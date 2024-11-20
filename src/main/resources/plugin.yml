@@ -1,0 +1,6 @@
+name: Surge
+version: '0.1-BETA'
+main: dev.eychro.surge.Surge
+api-version: '1.21'
+authors: [eychro]
+description: HubCore
